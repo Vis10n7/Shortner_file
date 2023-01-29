@@ -6,7 +6,7 @@ else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
   git clone $UPSTREAM_REPO /Shortner_file
 fi
-cd /DQ-The-File-Donor
+cd /Shortner_file
 pip3 install -U -r requirements.txt
 echo "Starting Shortner_file...."
 python3 bot.py
