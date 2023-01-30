@@ -39,7 +39,7 @@ FILTER_MODE= {}
 
 Client.on_message((filters.group | filters.private) & filters.text & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.incoming & filters.group)
 async def give_filter(client, message):
-  if FILTER_MODE.get(str(message.chat.id)) == "False":
+    if FILTER_MODE.get(str(message.chat.id)) == "False":
                     return
                 else:
                     await auto_filter(client, message)   
@@ -55,7 +55,7 @@ async def give_filter(client, message):
 @Client.on_message(filters.private & filters.text & filters.chat(AUTH_USERS) if AUTH_USERS else filters.text & filters.private)
 async def pm_filter(client, message):
     if PMFILTER:
-                await pm_AutoFilter(client, message)
+               await pm_AutoFilter(client, message)
         else:
             await pm_AutoFilter(client, message)
     else:
