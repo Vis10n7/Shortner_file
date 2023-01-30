@@ -37,7 +37,7 @@ BUTTONS = {}
 SPELL_CHECK = {}
 FILTER_MODE= {}
 
-Client.on_message((filters.group | filters.private) & filters.text & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.incoming & filters.group)
+@Client.on_message((filters.group | filters.private) & filters.text & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.incoming & filters.group)
 async def give_filter(client, message):
     if FILTER_MODE.get(str(message.chat.id)) == "False":
                     return
