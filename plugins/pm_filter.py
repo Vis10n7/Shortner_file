@@ -58,7 +58,7 @@ async def pm_filter(client, message):
                await pm_AutoFilter(client, message)
         else:
             await pm_AutoFilter(client, message)
-   else:
+  else:
         return
 
 @Client.on_message(filters.group & filters.text & filters.incoming)
