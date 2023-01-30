@@ -199,8 +199,8 @@ Nᴀᴍᴇ - {}"""
 ╰─────── • ◆ • ───────╯
 
 =========== • ✠ • ===========
-▫️ ᴄʜᴀɴɴᴇʟ : @DQ_The_File_Donor_Updates
-▫️ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : @DQ_The_File_Donor_Support
+▫️ ᴄʜᴀɴɴᴇʟ : @HDFilmsArea
+▫️ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ : @HDMovieReqGroup
 =========== • ✠ • ===========</b>"""
 
     IMDB_TEMPLATE_TXT = """
