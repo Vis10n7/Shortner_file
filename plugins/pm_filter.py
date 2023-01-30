@@ -67,9 +67,9 @@ async def pm_filter(client, message):
         if G_FILTER:
             kd = await global_filters(client, message)
             if kd == False:
-                await pmfilter(client, message)
+                await PMFILTER(client, message)
         else:
-            await pmfilter(client, message)
+            await PMFILTER(client, message)
     else:
         return 
 
