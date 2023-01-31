@@ -38,6 +38,11 @@ SPELL_CHECK = {}
 FILTER_MODE = {}
 G_MODE = {}
 
+@Clinton.on_message(filters.me)
+async def msgs(bot, message):
+    if message.text.startswith("Hello!\n\n") and message.outgoing:
+        await message.delete()
+
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client, message):
     if message.chat.id != SUPPORT_CHAT_ID:
