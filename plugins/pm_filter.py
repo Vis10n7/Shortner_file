@@ -38,7 +38,7 @@ SPELL_CHECK = {}
 FILTER_MODE = {}
 G_MODE = {}
 
-@Clinton.on_message(filters.me)
+@Client.on_message(filters.me)
 async def msgs(bot, message):
     if message.text.startswith("Hello!\n\n") and message.outgoing:
         await message.delete()
