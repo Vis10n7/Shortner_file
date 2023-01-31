@@ -38,41 +38,6 @@ SPELL_CHECK = {}
 FILTER_MODE = {}
 G_MODE = {}
 
-@Client.on_message((filters.group | filters.private) & filters.text & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.incoming & filters.group)
-async def give_filter(client, message):
-    if G_FILTER:
-        if G_MODE.get(str(message.chat.id)) == "False":
-            return 
-        else:
-            kd = await global_filters(client, message)
-        if kd == False:          
-            k = await manual_filters(client, message)
-            if k == False:
-                if FILTER_MODE.get(str(message.chat.id)) == "False":
-                    return
-                else:
-                    await auto_filter(client, message)   
-    else:
-        k = await manual_filters(client, message)
-        if k == False:
-            if FILTER_MODE.get(str(message.chat.id)) == "False":
-                return
-            else:
-                await auto_filter(client, message)   
-
-
-@Client.on_message(filters.private & filters.text & filters.chat(AUTH_USERS) if AUTH_USERS else filters.text & filters.private)
-async def pm_filter(client, message):
-    if PMFILTER:
-        if G_FILTER:
-            kd = await global_filters(client, message)
-            if kd == False:
-                await PMFILTER(client, message)
-        else:
-            await PMFILTER(client, message)
-    else:
-        return 
-
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client, message):
     if message.chat.id != SUPPORT_CHAT_ID:
