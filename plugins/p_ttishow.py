@@ -159,18 +159,22 @@ async def re_enable_chat(bot, message):
     await message.reply("Chat Successfully re-enabled")
 
 
-@Client.on_message(filters.command('stats') & filters.incoming)
-async def get_ststs(bot, message):
+# define the owner filter
+def is_owner(_, __, message):
+    return message.from_user and message.from_user.id == 1316494209
+
+# add the filter to the command handler
+@Client.on_message(filters.command('stats') & filters.incoming & is_owner)
+async def get_stats(bot, message):
     rju = await message.reply('Fetching stats..')
     total_users = await db.total_users_count()
-    totl_chats = await db.total_chat_count()
+    total_chats = await db.total_chat_count()
     files = await Media.count_documents()
     size = await db.get_db_size()
     free = 536870912 - size
     size = get_size(size)
     free = get_size(free)
-    await rju.edit(script.STATUS_TXT.format(files, total_users, totl_chats, size, free))
-
+    await rju.edit(script.STATUS_TXT.format(files, total_users, total_chats, size, free))
 
 @Client.on_message(filters.command('invite') & filters.user(ADMINS))
 async def gen_invite(bot, message):
