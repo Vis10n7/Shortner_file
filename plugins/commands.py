@@ -809,7 +809,7 @@ async def deletemultiplefiles(bot, message):
         deleted += 1
     await k.edit_text(text=f"<b>Process Completed for file deletion !\n\nSuccessfully deleted {str(deleted)} files from database for your query {keyword}.</b>")
 
-@Client.on_message(filters.command("shortlink") & filters.user(ADMINS))
+@Client.on_message(filters.command("shortlink")
 async def shortlink(bot, message):
     chat_type = message.chat.type
     if chat_type == enums.ChatType.PRIVATE:
@@ -822,9 +822,6 @@ async def shortlink(bot, message):
     data = message.text
     userid = message.from_user.id
     user = await bot.get_chat_member(grpid, userid)
-    if user.status != enums.ChatMemberStatus.ADMINISTRATOR and user.status != enums.ChatMemberStatus.OWNER and str(userid) not in ADMINS:
-        return await message.reply_text("<b>You don't have access to use this command !</b>")
-    else:
         pass
     try:
         command, shortlink_url, api = data.split(" ")
