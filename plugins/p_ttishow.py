@@ -59,14 +59,7 @@ async def save_group(bot, message):
                 temp.MELCOW['welcome'] = await message.reply_video(
                                                  video=(MELCOW_VID),
                                                  caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
-                                                 reply_markup=InlineKeyboardMarkup(
-                                                                         [[
-                                                                           InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
-                                                                           InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                                                                        ],[
-                                                                           InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Anime_Lover0_0")
-                                                                         ]]
-                                                 ),
+                                                
                                                  parse_mode=enums.ParseMode.HTML
                 )
                 
@@ -159,12 +152,10 @@ async def re_enable_chat(bot, message):
     await message.reply("Chat Successfully re-enabled")
 
 
-# define the owner filter
-def is_owner(_, __, message):
-    return message.from_user and message.from_user.id == 1316494209
+
 
 # add the filter to the command handler
-@Client.on_message(filters.command('stats') & filters.incoming & is_owner)
+@Client.on_message(filters.command('stats') & filters.user(ADMINS))
 async def get_stats(bot, message):
     rju = await message.reply('Fetching stats..')
     total_users = await db.total_users_count()
