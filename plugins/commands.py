@@ -809,8 +809,9 @@ async def deletemultiplefiles(bot, message):
         deleted += 1
     await k.edit_text(text=f"<b>Process Completed for file deletion !\n\nSuccessfully deleted {str(deleted)} files from database for your query {keyword}.</b>")
 
- @Client.on_message(filters.command("shortlink")
- async def shortlink(bot, message):
+
+@Client.on_message(filters.command("shortlink")
+async def shortlink(bot, message):
     chat_type = message.chat.type
     if chat_type == enums.ChatType.PRIVATE:
         return await message.reply_text(f"<b>Hey {message.from_user.mention}, This command only works on groups !</b>")
