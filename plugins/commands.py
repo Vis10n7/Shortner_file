@@ -809,7 +809,7 @@ async def deletemultiplefiles(bot, message):
         deleted += 1
     await k.edit_text(text=f"<b>Process Completed for file deletion !\n\nSuccessfully deleted {str(deleted)} files from database for your query {keyword}.</b>")
 
-@Client.on_message(filters.command("shortlink") & (filters.group | filters.supergroup))
+@Client.on_message(filters.command("shortlink") & (filters.group | filters.channel))
 async def shortlink(bot, message):
     chat_type = message.chat.type
     if chat_type == enums.ChatType.PRIVATE:
@@ -826,5 +826,3 @@ async def shortlink(bot, message):
     await save_group_settings(grpid, 'shortlink_api', api)
     await save_group_settings(grpid, 'is_shortlink', True)
     await reply.edit_text(f"<b>Successfully added shortlink API for {title}.\n\nCurrent Shortlink Website: <code>{shortlink_url}</code>\nCurrent API: <code>{api}</code></b>")
-
-
