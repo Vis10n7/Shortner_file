@@ -9,5 +9,8 @@ bs4
 git+https://github.com/Joelkb/cinemagoer
 datetime
 pytz
-aiohttp
+aiohttp==3.8.1
 asyncio
+Flask==2.2.2
+gunicorn==20.1.0
+
