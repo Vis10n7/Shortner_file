@@ -268,7 +268,7 @@ async def next_page(bot, query):
                     ],
                 )
     btn.insert(0, [
-        InlineKeyboardButton("⚡ 𝙃𝙤𝙬 𝙏𝙤 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙 ⚡", url=f"https://t.me/Bot_Buddies_Support/4")
+        InlineKeyboardButton("⚡ 𝙃𝙤𝙬 𝙏𝙤 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙 ⚡", url=f"https://t.me/+W5plh7_tP19lZjg1")
     ])
     try:
         await query.edit_message_reply_markup(
@@ -564,10 +564,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         reply_markup=InlineKeyboardMarkup(
                             [
                              [
-                              InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
+                              InlineKeyboardButton('Movies Gʀᴏᴜᴘ', url=GRP_LNK),
                               InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                            ],[
-                              InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Anime_Lover0_0")
+                              InlineKeyboardButton("🍿Movies🍿", url="https://t.me/New_Moviee_hindi")
                              ]
                             ]
                         )
@@ -612,10 +612,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
+                  InlineKeyboardButton('Movie Gʀᴏᴜᴘ', url=GRP_LNK),
                   InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                ],[
-                  InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Anime_Lover0_0")
+                  InlineKeyboardButton("🍿Movies🍿", url="https://t.me/New_Moviee_hindi")
                  ]
                 ]
             )
@@ -920,9 +920,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],[
                     InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about'),
-                    InlineKeyboardButton('Hᴏᴡ Tᴏ Dᴏɴʟᴏᴀᴅ', url=f'https://t.me/Bot_Buddies_Support/4')
+                    InlineKeyboardButton('Hᴏᴡ Tᴏ Dᴏɴʟᴏᴀᴅ', url=f'https://t.me/+W5plh7_tP19lZjg1')
                 ],[
-                    InlineKeyboardButton('✇ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ✇', url=CHNL_LNK)
+                    InlineKeyboardButton('💸EARN MONEY WITH BOT💸', url=CHNL_LNK)
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1168,7 +1168,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "owner_info":
             btn = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
-                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="t.me/Anime_Lover0_0")
+                    InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="t.me/J_shree_ram")
                   ]]
             await client.edit_message_media(
                 query.message.chat.id, 
