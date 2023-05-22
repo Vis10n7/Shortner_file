@@ -41,7 +41,7 @@ async def save_group(bot, message):
                     InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
                     InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                  ],[
-                    InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Anime_Lover0_0")
+                    InlineKeyboardButton("Movies", url="https://t.me/New_Moviee_hindi")
                   ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
