@@ -31,7 +31,7 @@ async def start(client, message):
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about'),
                     InlineKeyboardButton('Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ', url=f'https://t.me/Bot_Buddies_Support/4')
                 ],[
-                    InlineKeyboardButton('💸EARN MONEY WITH BOT💸', url=EARN_TXT)
+                    InlineKeyboardButton('💸EARN MONEY WITH BOT💸', url=f'https://t.me/bot_channel_011/16')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
@@ -55,7 +55,7 @@ async def start(client, message):
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about'),
                     InlineKeyboardButton('Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ ', url=f'https://t.me/Bot_Buddies_Support/4')
                 ],[
-                    InlineKeyboardButton('💸EARN MONEY WITH BOT💸', url=EARN_TXT)
+                    InlineKeyboardButton('💸EARN MONEY WITH BOT💸', url=f'https://t.me/bot_channel_011/16')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -104,7 +104,7 @@ async def start(client, message):
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about'),
                     InlineKeyboardButton('Iɴʟɪɴᴇ Sᴇᴀʀᴄʜ ☌', url=f'https://t.me/Bot_Buddies_Support/4')
                 ],[
-                    InlineKeyboardButton('💸EARN MONEY WITH BOT💸', url=EARN_TXT)
+                    InlineKeyboardButton('💸EARN MONEY WITH BOT💸', url=f'https://t.me/bot_channel_011/16')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
