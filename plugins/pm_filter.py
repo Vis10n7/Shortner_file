@@ -11,7 +11,7 @@ import pyrogram
 from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, \
     make_inactive
 from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, SUPPORT_CHAT_ID, CUSTOM_FILE_CAPTION, MSG_ALRT, PICS, AUTH_GROUPS, P_TTI_SHOW_OFF, PMFILTER, GRP_LNK, G_FILTER, CHNL_LNK, NOR_IMG, LOG_CHANNEL, SPELL_IMG, MAX_B_TN, IMDB, \
-    SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE, NO_RESULTS_MSG, PMFILTER
+    SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE, NO_RESULTS_MSG, PMFILTER, EARN_TXT
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, InputMediaPhoto
 from pyrogram import Client, filters, enums
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid
@@ -922,7 +922,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about'),
                     InlineKeyboardButton('Hᴏᴡ Tᴏ Dᴏɴʟᴏᴀᴅ', url=f'https://t.me/+W5plh7_tP19lZjg1')
                 ],[
-                    InlineKeyboardButton('💸EARN MONEY WITH BOT💸', url=CHNL_LNK)
+                    InlineKeyboardButton('💸EARN MONEY WITH BOT💸', url=EARN_TXT)
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -1385,7 +1385,7 @@ async def auto_filter(client, msg, spoll=False):
             )
 
     btn.insert(0, [
-        InlineKeyboardButton("⚡ 𝙃𝙤𝙬 𝙏𝙤 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙 ⚡", url=f"https://t.me/Bot_Buddies_Support/4")
+        InlineKeyboardButton("⚡ 𝙃𝙤𝙬 𝙏𝙤 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙 ⚡", url=f"https://t.me/+W5plh7_tP19lZjg1")
     ])
 
     if offset != "":
