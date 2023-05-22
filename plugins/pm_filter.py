@@ -915,12 +915,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
                     InlineKeyboardButton('⤬ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ⤬', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('♚ Bᴏᴛ Oᴡɴᴇʀ', callback_data="owner_info"),
-                    InlineKeyboardButton('⌬ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK)
+                    InlineKeyboardButton('🍿Movies🍿', url=f'https://t.me/New_Moviee_hindi'),
+                    InlineKeyboardButton('Request Gʀᴏᴜᴘ', url=GRP_LNK)
                 ],[
                     InlineKeyboardButton('〄 Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('⍟ Aʙᴏᴜᴛ', callback_data='about'),
-                    InlineKeyboardButton('Hᴏᴡ Tᴏ Dᴏɴʟᴏᴀᴅ', url=f'https://t.me/+W5plh7_tP19lZjg1')
                 ],[
                     InlineKeyboardButton('💸EARN MONEY WITH BOT💸', url=f'https://t.me/bot_channel_011/16')
                   ]]
