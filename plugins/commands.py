@@ -314,7 +314,7 @@ async def start(client, message):
             InlineKeyboardButton("⁉️ ʜᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ ⁉️", url=HOW_TO_VERIFY)
         ]]
         await message.reply_text(
-            text="script.VERIFY_TXT.format( message.from_user.mention),
+            text=script.VERIFY_TXT.format( message.from_user.mention),
             protect_content=True,
             reply_markup=InlineKeyboardMarkup(btn)
         )
