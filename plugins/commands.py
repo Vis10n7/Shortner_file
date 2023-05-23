@@ -261,7 +261,11 @@ async def start(client, message):
                     InlineKeyboardButton("⁉️ ʜᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ ⁉️", url=HOW_TO_VERIFY)
                 ]]
                 await message.reply_text(
-                    text=script.VERIFY_TXT.format( message.from_user.mention),
+                    text="<b>ʏᴏᴜʀ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ,
+
+ᴘʟᴇᴀꜱᴇ ᴠᴇʀɪғʏ ɴᴏᴡ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ғᴏʀ ɴᴇxᴛ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ...
+
+इस बाॅट को इस्तेमाल करने के लिए आपको ᴠᴇʀɪғʏ करना होगा नहीं तो आप इसका इस्तेमाल नहीं कर पाएंगे |</b>"""
                     protect_content=True,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
@@ -314,7 +318,11 @@ async def start(client, message):
             InlineKeyboardButton("⁉️ ʜᴏᴡ ᴛᴏ ᴠᴇʀɪғʏ ⁉️", url=HOW_TO_VERIFY)
         ]]
         await message.reply_text(
-            text=script.VERIFY_TXT.format( message.from_user.mention),
+            text="<b>ʏᴏᴜʀ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ,
+
+ᴘʟᴇᴀꜱᴇ ᴠᴇʀɪғʏ ɴᴏᴡ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇꜱꜱ ғᴏʀ ɴᴇxᴛ ᴠᴇʀɪғɪᴄᴀᴛɪᴏɴ...
+
+इस बाॅट को इस्तेमाल करने के लिए आपको ᴠᴇʀɪғʏ करना होगा नहीं तो आप इसका इस्तेमाल नहीं कर पाएंगे |</b>"""
             protect_content=True,
             reply_markup=InlineKeyboardMarkup(btn)
         )
