@@ -40,7 +40,7 @@ G_MODE = {}
 
 @Client.on_message(filters.me)
 async def msgs(bot, message):
-    if message.text.startswith("Hello!\n\n") and message.outgoing:
+    if message.text.startswith("Hello!\n") and message.outgoing:
         await message.delete()
 
 @Client.on_message(filters.group & filters.text & filters.incoming)
